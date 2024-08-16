@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BBL Dilly</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBL Dilly</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  
+    <div class="flexer">
+        <div id="button-slider">
+            <button id="popup" onclick="slideAndPlay()">Click here to see the biggest BBL in History</button>
+        </div>
+
+        <div id="video-container">
+            <video id="dilly" controls width="300" loop>
+                <source src="media/bbl-dillard.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
