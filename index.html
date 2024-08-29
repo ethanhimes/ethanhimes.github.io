@@ -8,17 +8,24 @@
 </head>
 <body>
     <div class="flexer">
-        <div id="button-slider">
-            <button id="popup" onclick="slideAndPlay()">Click here to see the biggest BBL in History</button>
+        <div class="button-container">
+            <button class="popup" onclick="showAndPlayVideo()">Click here to see the biggest BBL in History</button>
+            <div id="dilly-video-container">
+                <video id="dilly" controls width="300" loop>
+                    <source src="bbl-dillard.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
 
-        <div id="video-container">
-            <video id="dilly" controls width="300" loop>
-                <source src="bbl-dillard.mp4" type="video/mp4">
-            </video>
+        <div class="button-container">
+            <button class="popup" onclick="playStillVideo()">Click here to see Still Dillard</button>
+            <div id="still-video-container">
+                <video id="still" controls width="300" loop>
+                    <source src="still.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
-
 
     <script src="script.js"></script>
 </body>

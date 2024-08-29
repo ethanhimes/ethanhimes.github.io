@@ -9,7 +9,12 @@ body {
   animation-fill-mode: forwards;
 }
 
-#video-container {
+#dilly-video-container {
+      display: none;
+      margin-top: 20px;
+    }
+
+#still-video-container {
       display: none;
       margin-top: 20px;
     }
@@ -26,12 +31,18 @@ body {
 .flexer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
 }
 
-#popup {
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup {
     align-items: center;
     padding: 15px 30px;
     background-color: #6d7a88;
@@ -41,5 +52,26 @@ body {
     font-size: 1.4rem;
     border-radius: 0.5rem;
     color: white;
+    width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+    .popup {
+        width: 90%;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .popup {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .popup {
+        width: 70%;
+        font-size: 1rem;
+    }
+}
