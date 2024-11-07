@@ -19,6 +19,11 @@ body {
       margin-top: 20px;
     }
 
+#macarena-video-container {
+      display: none;
+      margin-top: 20px;
+    }
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
