@@ -1,10 +1,3 @@
-//function playVideo(videoContainer, videoElement) {
-//    videoContainer.style.display = 'block';
-//
-//    videoElement.play();
-//}
-
-
 function playVideo(videoContainer, videoElement) {
     if (videoContainer.style.display === 'block') {
         videoElement.pause();

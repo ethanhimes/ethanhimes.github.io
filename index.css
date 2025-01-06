@@ -65,23 +65,45 @@ body {
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 930px) {
     .popup {
         width: 90%;
         font-size: 1.3rem;
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 680px) {
+    .popup {
+        padding: 15px 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .popup {
         width: 80%;
         font-size: 1.2rem;
+    }
+
+    .flexer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .popup {
+        width: 70%;
+        font-size: 1rem;
+
     }
 }
 
 @media only screen and (max-width: 475px) {
     .popup {
-        width: 70%;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        padding: 10px 15px;
     }
 }
